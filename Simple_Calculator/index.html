@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MY CALC</title>
+</head>
+
+<body>
+
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    <div class="circle" id="circle3"></div>
+
+    <div class="container">
+        <span id="heading">
+            <h2>CALCULATOR</h2>
+        </span>
+        <input type="text" id="result" placeholder="Answer" disabled>
+        <div class="inputs">
+            <input type="number" id="num1" class="num" placeholder="Input Number"><br><br>
+            <input type="number" id="num2" class="num" placeholder="Input Number">
+        </div>
+        <br>
+        <div class="selection">
+            <span id="symbols">
+                <h3>SELECT OPERATION</h3>
+            </span>
+            <select name="operators" id="operator">
+                <option value=" " data-operation="Select operator"></option>
+                <option value="+" data-operation="+">+</option>
+                <option value="-" data-operation="-">-</option>
+                <option value="*" data-operation="*">*</option>
+                <option value="/" data-operation="/">/</option>
+            </select>
+        </div>
+        <br>
+        <div class="btns">
+            <button onclick="calculate()"> RESULT</button>
+            <button onclick="reset()">RESET</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
